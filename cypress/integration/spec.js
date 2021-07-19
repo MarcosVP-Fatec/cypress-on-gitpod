@@ -1,3 +1,19 @@
+/// <reference types="cypress" />
+
+
+describe('Cadastro de Usuário/Proprietário' , () => {
+
+	beforeEach(() => {
+		cy.visit('https://8081-lavender-cat-f6fn0mkm.ws-us11.gitpod.io')	
+	});
+
+	it('Abrir login de usuário inicial' , () => {
+
+	});
+
+	
+
+});
 
 
 /*
