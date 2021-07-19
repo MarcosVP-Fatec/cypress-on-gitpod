@@ -1,3 +1,6 @@
+
+
+/*
 describe('Sapper template app', () => {
 	beforeEach(() => {
 		cy.visit('/')
@@ -17,3 +20,4 @@ describe('Sapper template app', () => {
 		cy.url().should('include', '/blog');
 	});
 });
+*/

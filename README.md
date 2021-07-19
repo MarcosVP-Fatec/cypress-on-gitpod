@@ -3,6 +3,14 @@
 # Vídeo explicativo
 [Vídeo Youtube](https://www.youtube.com/watch?v=gTRMuWCp8mE)
 
+## Cria um novo projeto Cypress
+>> npm init [--yes]
+## Inslatar uma versão específica ou a última disponível
+## Isto muda o package.json colocando a dependência lá dentro
+>> npm install -D cypress@4.1 | npm install -D cypress
+## Criar a estrutura de pastas e abrir o Cypress
+>> ./node_modules/.bin/cypress open
+
 # cypress-on-gitpod
 A template repository to run [Cypress.io](https://www.cypress.io/) on [Gitpod.io](https://www.gitpod.io/).
 

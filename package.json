@@ -1,7 +1,7 @@
 {
-  "name": "TODO",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "Saloon",
+  "description": "Aluguéis de salões",
+  "version": "1.0.0",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
@@ -11,6 +11,7 @@
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run"
   },
+  "author": "Marcos Vinicio Pereira",
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "next",
