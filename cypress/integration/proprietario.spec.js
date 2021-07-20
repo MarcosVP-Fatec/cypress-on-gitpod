@@ -2,7 +2,8 @@ describe('Saloon',()=>{
 
 	beforeEach(() => {
 		//cy.visit('https://8081-blue-sloth-3i5wnjdz.ws-us11.gitpod.io/')
-		cy.visit(Cypress.env('host'))
+		cy.log(Cypress.env('host'));
+		cy.visit(Cypress.env('host'));
 	});
 
 	it('Cadastro de Usuário/proprietário' , () => {

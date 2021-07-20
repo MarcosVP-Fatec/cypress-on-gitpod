@@ -1,5 +1,4 @@
 {
 	  "baseUrl": "http://localhost:3000"
 	, "video": false
-	, "host": "https://8081-blue-sloth-3i5wnjdz.ws-us11.gitpod.io/"
 }
