@@ -1,6 +1,7 @@
 {
-	"baseUrl": "https://8081-blue-sloth-3i5wnjdz.ws-us11.gitpod.io/",
-	"video": false
+	  "baseUrl": "https://8081-blue-sloth-3i5wnjdz.ws-us11.gitpod.io/"
+	, "CYPRESS_BASE_URL": "https://8081-blue-sloth-3i5wnjdz.ws-us11.gitpod.io/"
+	, "video": false
 }
 
 /*http://localhost:3000*/
