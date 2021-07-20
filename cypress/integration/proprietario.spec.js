@@ -1,7 +1,8 @@
 describe('Saloon',()=>{
 
 	beforeEach(() => {
-		cy.visit('https://8081-turquoise-cattle-h7umftdh.ws-us11.gitpod.io/')
+		//cy.visit('https://8081-turquoise-cattle-h7umftdh.ws-us11.gitpod.io/')
+		cy.visit()
 	});
 
 	it('Cadastro de Usuário/proprietário' , () => {
