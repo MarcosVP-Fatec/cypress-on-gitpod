@@ -1,4 +1,4 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](gitpod.io/#https://github.com/MarcosVP-Fatec/cypress-on-gitpod)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/MarcosVP-Fatec/cypress-on-gitpod)
 
 # Vídeo explicativo
 [Vídeo Youtube](https://www.youtube.com/watch?v=gTRMuWCp8mE)
