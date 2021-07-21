@@ -27,7 +27,7 @@ describe('Saloon',()=>{
 		cy.get('[data-cy=submit]').click();
 
 		cy.wait('@postLogin').then((xhr) => {
-			expect(xhr.status).be.eq(200);
+			expect(xhr.status).be.eq(403);
 			expect(xhr.response.body).has.property('token');
 			expect(xhr.response.body.token).is.null;
 		});
