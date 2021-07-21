@@ -7,7 +7,7 @@ describe('Saloon',()=>{
 		cy.visit(Cypress.env("host"));
 	});
 
-	it('Login com falha' , () => {
+	it.skip('Login com falha' , () => {
 
 		// cy.get = busca um elemento
 		// cy.type = insere um texto
@@ -52,18 +52,51 @@ describe('Saloon',()=>{
 		cy.get('[data-cy=submit]').click();
 
 		cy.wait('@postLogin').then((xhr) => {
+
 			cy.get('[data-cy=situacao]').contains('Usuário logado');
 			expect(xhr.status).be.eq(200);
 			expect(xhr.response.body).has.property('token');
 			expect(xhr.response.body.token).is.not.null;
+			cy.get('[data-cy=logout]').click()
+			cy.get('[data-cy=submit-sair]').click()
+/*			
+			cy.wait("@postLogin").then( (xhr) => {
+				expect(xhr.status).be.eq(200);
+			});
+*/
+
 		});
-
-		//Logout
-		cy.get('[href="/logar"]').click() //cy.get('[data-cy=submit]').click();
-		cy.get('.btn').contains('Sair').click();
-
+	
 	});
 
+	it.skip('Logout' , () => {
+
+		// cy.get = busca um elemento
+		// cy.type = insere um texto
+
+		// routing
+		// start server com cy.server()
+		// criar uma rota com cy.route()
+		// atribuir a rota a um alias 
+		// esperar esta rota com cy.wait()
+
+		cy.server()
+		cy.route('GET', '**/login').as('getLogin');
+		cy.get('[data-cy=home]').click(); 
+		cy.get('[href="/logar"]').click(); 
+		//cy.url().should('include', '/login').click()
+		//cy.get('[data-cy=submit-sair]').click();
+
+		/*
+		cy.wait('@postLogin').then((xhr) => {
+
+//			cy.get('[data-cy=situacao]').contains('Usuário logado');
+			expect(xhr.status).be.eq(200);
+			expect(xhr.response.body).has.property('token');
+			expect(xhr.response.body.token).is.null;
+
+		});
+	*/
+	});
 
 });
-
