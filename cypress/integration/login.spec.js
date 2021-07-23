@@ -7,7 +7,7 @@ describe('Saloon',()=>{
 		cy.visit(Cypress.env("host"));
 	});
 
-	it.skip('Login com falha' , () => {
+	it('Login com falha' , () => {
 
 		// cy.get = busca um elemento
 		// cy.type = insere um texto
@@ -33,7 +33,7 @@ describe('Saloon',()=>{
 
 	});
 
-	it('Login bem sucedido' , () => {
+	it('Login bem sucedido com Logout' , () => {
 
 		// cy.get = busca um elemento
 		// cy.type = insere um texto
